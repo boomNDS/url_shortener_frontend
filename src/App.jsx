@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import logo from './logo.svg'
+import './assets/styles/main.scss'
+import './assets/styles/tailwind.scss'
 import './App.css'
 
 function App() {
