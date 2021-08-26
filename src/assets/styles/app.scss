@@ -39,8 +39,64 @@
         &:focus {
             box-shadow: 0px 0px 10px 0px rgb(238, 238, 238);
         }
+    }
 
+    .inputLayout {
+        display: flex;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+        transition: all 0.4s;
 
+        div {
+            margin: 10px;
+        }
+
+        .iconEnter {
+            color: #e0e0e0;
+            background: #282c34;
+            outline: none;
+            border: 3px solid #e0e0e0;
+            padding: 5px 7px;
+            transition: all 0.3s;
+
+            &:focus {
+                box-shadow: 0px 0px 5px 0px rgb(238, 238, 238);
+            }
+
+            &:active {
+                background-color: #e0e0e0;
+                color: #282c34;
+                box-shadow: 0 5px #666;
+                transform: translateY(4px);
+            }
+        }
+    }
+
+    .copyTag,
+    .failTag {
+        font-size: 1rem;
+        border-radius: 10px;
+        padding: 5px 6px;
+        transition: all 0.3s;
+    }
+
+    .copyTag {
+        background: #27ac72;
+    }
+
+    .failTag {
+        background: #e97313;
+
+    }
+
+    .displayResult {
+        display: flex;
+        align-items: center;
+
+        div {
+            margin: 5px;
+        }
     }
 }
 
