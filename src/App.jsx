@@ -1,44 +1,22 @@
 import React, { useState } from 'react'
 import logo from './logo.svg'
-import './assets/styles/main.scss'
+import './assets/styles/app.scss'
 import './assets/styles/tailwind.scss'
-import './App.css'
+import { validURL } from './assets/js/utils'
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  const [url, setUrl] = useState("")
+  const generateUrl = e => {
+    if (e.key === 'Enter') {
+      console.log('do validate');
+    }
+  }
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>Hello Vite + React!</p>
-        <p>
-          <button type="button" onClick={() => setCount((count) => count + 1)}>
-            count is: {count}
-          </button>
-        </p>
-        <p>
-          Edit <code>App.jsx</code> and save to test HMR updates.
-        </p>
-        <p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-          {' | '}
-          <a
-            className="App-link"
-            href="https://vitejs.dev/guide/features.html"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Vite Docs
-          </a>
-        </p>
+        <p>Welecom to BoomBoom  URL Shortener</p>
+        <input type="text" placeholder="Paste url..." onKeyDown={generateUrl} />
+
       </header>
     </div>
   )
