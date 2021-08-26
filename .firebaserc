@@ -1,0 +1,5 @@
+{
+  "projects": {
+    "default": "tonic-url-shortener"
+  }
+}
