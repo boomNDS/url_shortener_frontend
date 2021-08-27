@@ -18,4 +18,6 @@ shortener WEB : [tonic-url-shortener.web.app/](tonic-url-shortener.web.app/)
 ## Security issues
 1.  Invlid URL format
     - create valid function before create short url
+2. Create short url can be the same url part
+    - check database before create url
 ## Scalability
