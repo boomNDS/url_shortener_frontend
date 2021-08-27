@@ -23,6 +23,12 @@
     font-size: calc(10px + 2vmin);
     color: white;
 
+    a {
+        color: whitesmoke;
+        cursor: pointer;
+        text-decoration: none;
+    }
+
     input {
         color: #282c34;
         font-size: 16px;
